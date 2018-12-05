@@ -34,10 +34,14 @@ import java.util.Map;
 public class Main {
 
   private Fibonacci f = new Fibonacci();
+  private Quadrado q = new Quadrado();
 
   public static void main(String[] args) throws Exception {
     SpringApplication.run(Main.class, args);
   }
+  
+  
+  
 
   @RequestMapping("/")
   String index() {
@@ -52,6 +56,19 @@ public class Main {
      }
      model.put("sequencia", sequencia);
     return "fibo";
+  }
+  
+   @RequestMapping("/quadrado")
+  String quadrado(Map<String, Object> model) {
+     ArrayList<Long> sequencia = new ArrayList<Long>();
+    double i = 100;
+		if (compara(i)) {
+			System.out.println("Quadrado Perfeito");
+		} else {
+			System.out.println("Não é quadrado perfeito");
+		}
+    model.put("sequencia", sequencia);
+    return "quadrado";
   }
 
 }
