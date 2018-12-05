@@ -59,15 +59,14 @@ public class Main {
   }
   
    @RequestMapping("/quadrado")
-  String quadrado(Map<String, Object> model) {
-     ArrayList<Long> sequencia = new ArrayList<Long>();
+ 
     double i = 100;
 		if (q.compara(i)) {
 			System.out.println("Quadrado Perfeito");
 		} else {
 			System.out.println("Não é quadrado perfeito");
 		}
-    model.put("sequencia", sequencia);
+    
     return "quadrado";
   }
 
