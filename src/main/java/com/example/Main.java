@@ -62,7 +62,7 @@ public class Main {
   String quadrado(Map<String, Object> model) {
      ArrayList<Long> sequencia = new ArrayList<Long>();
     double i = 100;
-		if (compara(i)) {
+		if (q.compara(i)) {
 			System.out.println("Quadrado Perfeito");
 		} else {
 			System.out.println("Não é quadrado perfeito");
