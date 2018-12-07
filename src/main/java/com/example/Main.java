@@ -15,7 +15,6 @@
  */
 
 package com.example;
-package com.exampl;
 
 ;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,7 +35,7 @@ import java.util.Map;
 public class Main {
 
   private Fibonacci f = new Fibonacci();
-  private Quadrado q = new Quadrado();
+ 
  
 
   public static void main(String[] args) throws Exception {
@@ -61,18 +60,6 @@ public class Main {
     return "fibo";
   }
   
-  @RequestMapping("/quadrado")
-  String quadrado(Map<String, Object> model) {
- 
-    double i = 100;
-		if (q.quadrado(i)) {
-			System.out.println("Quadrado Perfeito");
-		} else {
-			System.out.println("Não é quadrado perfeito");
-		}
-    
-    return "quadrado";
-  }
   
    
 
