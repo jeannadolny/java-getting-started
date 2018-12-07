@@ -62,9 +62,10 @@ public class Main {
   }
   
   @RequestMapping("/quadrado")
+  
    
     double i = 100;
-		if (q.quadrado(i)) {
+		if (q.Quadrado(i)) {
 			model.put("Quadrado Perfeito");
 		} else {
 			model.put("Não é quadrado perfeito");
