@@ -34,7 +34,7 @@ import java.util.Map;
 public class Main {
 
   private Fibonacci f = new Fibonacci();
-  private Quadrado q = new Quadrado();
+ 
 
   public static void main(String[] args) throws Exception {
     SpringApplication.run(Main.class, args);
@@ -58,16 +58,6 @@ public class Main {
     return "fibo";
   }
   
-   @RequestMapping("/quadrado")
- 
-    double i = 100;
-		if (q.quadrado(i)) {
-			System.out.println("Quadrado Perfeito");
-		} else {
-			System.out.println("Não é quadrado perfeito");
-		}
-    
-    return "quadrado";
-  }
+   
 
 }
