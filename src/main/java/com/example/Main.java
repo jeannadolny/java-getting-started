@@ -62,7 +62,7 @@ public class Main {
   @RequestMapping("/quadrado")
   String quadrado(Map<String, Object> model) {
  
-    double i = 100;
+    Double i = 100;
 		if (q.quadrado(i)) {
 			System.out.println("Quadrado Perfeito");
 		} else {
