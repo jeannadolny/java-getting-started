@@ -62,8 +62,7 @@ public class Main {
   }
   
   @RequestMapping("/quadrado")
-  {
- 
+   
     double i = 100;
 		if (q.quadrado(i)) {
 			System.out.println("Quadrado Perfeito");
@@ -71,9 +70,7 @@ public class Main {
 			System.out.println("Não é quadrado perfeito");
 		}
     
-    return "quadrado";
-  }
-  
+ 
   
    
 
