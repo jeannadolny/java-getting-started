@@ -60,7 +60,7 @@ public class Main {
   }
   
   @RequestMapping("/quadrado")
-  {
+  String quadrado(Map<String, Object> model) {
  
     double i = 100;
 		if (q.quadrado(i)) {
