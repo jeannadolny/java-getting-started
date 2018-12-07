@@ -35,6 +35,7 @@ import java.util.Map;
 public class Main {
 
   private Fibonacci f = new Fibonacci();
+  private Quadrado q = new Quadrado();
  
  
 
@@ -58,6 +59,19 @@ public class Main {
      }
      model.put("sequencia", sequencia);
     return "fibo";
+  }
+  
+  @RequestMapping("/quadrado")
+  {
+ 
+    double i = 100;
+		if (q.quadrado(i)) {
+			System.out.println("Quadrado Perfeito");
+		} else {
+			System.out.println("Não é quadrado perfeito");
+		}
+    
+    return "quadrado";
   }
   
   
