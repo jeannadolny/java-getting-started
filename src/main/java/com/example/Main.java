@@ -34,6 +34,7 @@ import java.util.Map;
 public class Main {
 
   private Fibonacci f = new Fibonacci();
+  private Quadrado q = new Quadrado();
  
 
   public static void main(String[] args) throws Exception {
