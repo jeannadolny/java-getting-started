@@ -61,13 +61,13 @@ public class Main {
    @RequestMapping("/quadrado")
  
     double i = 100;
-		if (q.compara(i)) {
+		if (q.quadrado(i)) {
 			System.out.println("Quadrado Perfeito");
 		} else {
 			System.out.println("Não é quadrado perfeito");
 		}
     
-    return "";
+    return "quadrado";
   }
 
 }
