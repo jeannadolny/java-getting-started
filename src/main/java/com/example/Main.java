@@ -15,6 +15,7 @@
  */
 
 package com.example;
+package com.exampl;
 
 ;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,6 +29,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.ArrayList;
 import java.util.Map;
+
 
 @Controller
 @SpringBootApplication
@@ -62,7 +64,7 @@ public class Main {
   @RequestMapping("/quadrado")
   String quadrado(Map<String, Object> model) {
  
-    Double i = 100;
+    double i = 100;
 		if (q.quadrado(i)) {
 			System.out.println("Quadrado Perfeito");
 		} else {
