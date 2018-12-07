@@ -65,9 +65,9 @@ public class Main {
    
     double i = 100;
 		if (q.quadrado(i)) {
-			System.out.println("Quadrado Perfeito");
+			model.put("Quadrado Perfeito");
 		} else {
-			System.out.println("Não é quadrado perfeito");
+			model.put("Não é quadrado perfeito");
 		}
     
  
